@@ -4,7 +4,7 @@ This is a Home Assistant custom integration for the unofficial GTT API:
 
 `http://gpa.madbob.org/query.php?stop=XXX`
 
-It is intentionally not a Home Assistant add-on. Add-ons require Home Assistant OS or Supervised. For Home Assistant Container/Docker, a custom integration is the Docker-compatible option.
+It is intentionally not a Home Assistant add-on. This is a custom integration and supports Home Assistant OS, Supervised, and Container/Docker.
 
 ## What It Creates
 
@@ -28,23 +28,27 @@ Screenshots:
 
 ![Card Example](images/CardExample.png)
 
-## Docker Install
+## Installation
 
-Mount this integration into your Home Assistant `/config/custom_components` directory.
+Choose the path that matches your Home Assistant setup.
 
-Example `docker-compose.yml` volume:
+### Path A: Home Assistant OS or Supervised
 
-```yaml
-services:
-  homeassistant:
-    volumes:
-      - ./config:/config
-      - ./gtt-addon/custom_components/gtt_bus:/config/custom_components/gtt_bus:ro
-```
+Option 1 (recommended): install via HACS custom repository.
 
-If this repository is your Home Assistant config directory, use the absolute path to `gtt-addon/custom_components/gtt_bus` in the bind mount.
+1. Open HACS.
+2. Go to **Integrations**.
+3. Open the menu in the top-right corner and choose **Custom repositories**.
+4. Add this repository URL (for example, `https://github.com/Emmunaf/homeassistant-gtt-integration/`) and set category to **Integration**.
+5. Search for **GTT Bus** in HACS and install it.
+6. Restart Home Assistant.
 
-Restart Home Assistant after adding the mount.
+### Path B: Home Assistant run in docker
+Option 2: manual install.
+
+1. Copy `custom_components/gtt_bus` into your Home Assistant config at `/config/custom_components/gtt_bus`.
+2. Restart Home Assistant.
+
 
 ## Configure
 
