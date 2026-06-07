@@ -1,0 +1,40 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "GTT Bus",
+        "description": "Configure the GTT stops to monitor. Enter multiple stop IDs separated by commas, spaces, semicolons, or newlines.",
+        "data": {
+          "name": "Name",
+          "stops": "Stop IDs",
+          "scan_interval": "Scan interval in seconds"
+        }
+      }
+    },
+    "error": {
+      "no_stops": "Enter at least one stop ID.",
+      "invalid_stop": "Stop IDs can only contain letters, numbers, underscores, and hyphens.",
+      "invalid_scan_interval": "Scan interval must be at least 30 seconds."
+    },
+    "abort": {
+      "already_configured": "These stops are already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "GTT Bus options",
+        "description": "Update the stops or polling interval.",
+        "data": {
+          "stops": "Stop IDs",
+          "scan_interval": "Scan interval in seconds"
+        }
+      }
+    },
+    "error": {
+      "no_stops": "Enter at least one stop ID.",
+      "invalid_stop": "Stop IDs can only contain letters, numbers, underscores, and hyphens.",
+      "invalid_scan_interval": "Scan interval must be at least 30 seconds."
+    }
+  }
+}
