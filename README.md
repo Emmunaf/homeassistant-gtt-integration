@@ -69,4 +69,3 @@ Each stop appears as a device named `GTT Stop <stop_id>` and creates these entit
 - Polling faster than 30 seconds is blocked to avoid hammering the public endpoint.
 - Failed API calls are retried once after 10 seconds.
 - If retry also fails, the integration keeps the last successful value and marks entities with `stale: true` plus `last_error`.
-- If you only need a single stop and do not want a custom integration, Home Assistant's built-in `rest` sensor plus a template sensor can also work. This integration is cleaner for multiple stops and UI configuration.

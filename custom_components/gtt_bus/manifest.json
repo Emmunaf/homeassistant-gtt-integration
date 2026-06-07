@@ -1,12 +1,12 @@
 {
   "domain": "gtt_bus",
   "name": "GTT Bus",
-  "codeowners": [],
+  "codeowners": ["@emmunaf"],
   "config_flow": true,
   "dependencies": [],
-  "documentation": "https://github.com/madbob/gtt-pirate-api",
+  "documentation": "https://github.com/Emmunaf/homeassistant-gtt-integration",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/madbob/gtt-pirate-api/issues",
+  "issue_tracker": "https://github.com/Emmunaf/homeassistant-gtt-integration/issues",
   "requirements": [],
   "version": "0.3.0"
 }
